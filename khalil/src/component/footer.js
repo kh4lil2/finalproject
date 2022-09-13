@@ -9,10 +9,10 @@ import {
 
 export default function App() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+    <MDBFooter bgColor='light' className='text-lg-start text-muted'>
 
-      <section className='footer'>
-        <div className='containe text-center text-md-start mt-5'>
+      <section className='footer lml'>
+        <div className=''>
           <div className='row mt-3'>
             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
               <h4 className='t'>
@@ -22,14 +22,14 @@ export default function App() {
               </p>
             </div>
 
-            <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
+            <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mo' >
               <h4 className='t'>INFORMATIONS DE CONTACT</h4>
               <p className='para'>
-                <h6>Adress</h6>
+                <h4>Adress</h4>
                 5090 Monastir,Bekalta
               </p>
               <p className='para'>
-                <h6>Phone</h6>
+                <h4>Phone</h4>
                 (+216)23289961
               </p>
             </div>
@@ -38,15 +38,15 @@ export default function App() {
 
               <div className="social-container">
 
-                <a href="https://www.youtube.com/c/jamesqquick"
+                <a href=""
                   className="youtube social">
                   <FontAwesomeIcon icon={faYoutube} size="2x" />
                 </a>
-                <a href="https://www.facebook.com/"
+                <a href=""
                   className="facebook social">
                   <FontAwesomeIcon icon={faFacebook} size="2x" />
                 </a>
-                <a href="https://www.instagram.com/learnbuildteach"
+                <a href=""
                   className="instagram social">
                   <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>

@@ -4,9 +4,11 @@ import Map from './map'
 import { Form, Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Swal from 'sweetalert2';
+import swal from 'sweetalert';
 import axios from "axios";
-export default class  contact extends Component {
+import Navbar1 from './navbar';
+
+export default class contact extends Component {
  constructor(){
   super();
   this.state={
@@ -19,24 +21,33 @@ export default class  contact extends Component {
 
  }
 sendEmail =(e)=> {
-  e.preventDefault();
-axios.post("http://localhost:4000/contact" ,this.state).then(
+e.preventDefault();
+axios.post("https://oussamacc.herokuapp.com/contact" ,this.state).then(
 res=>{
   console.log(res)
+  
+  swal("thank for your require", "we will reply as soon as possible", "success").then(function(){
+    window.location.reload(); 
+ });
+  
 }
 ).catch(err=>
 {console.log(err)})
+
 
 }
   render(){
     
   return (
-
+    
     <>
-      <div >
+
+<Navbar1/>
+      <div className='sl' >
         <img className='contactimg' src={Img} />
       </div>
-      <div className="App">
+      <div className="columns">
+        <div class="column column-2 cc" >
         <form onSubmit={this.sendEmail} >
           <Card className='card' style={{ width: "100%" }} >
             <Card.Body className='contact'>
@@ -62,7 +73,8 @@ res=>{
             </div>
           </Card>
         </form>
-        <div>
+        </div>
+        <div className="column column-1">
           <Map />
         </div>
       </div>

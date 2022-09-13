@@ -4,35 +4,10 @@
   margin: 20px;
 }
 
-.navbar {
-  background-color: #ffffff;
-  justify-content: space-between;
-
-
-
-}
-
-.nav {
-  margin: 15px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
-  font-size: 20px;
-  text-decoration: none;
-  color: #1313a7;
-
-
-
-}
-
-.navv {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
 .contactimg {
   height: 550px;
-  width: 1519px;
+  width: 100%;
+
 }
 
 .containe {
@@ -86,16 +61,19 @@ a.twitter {
 }
 
 a.instagram {
-  color: black;
+  color: rgb(207, 87, 87);
 }
 
 .social-container {
-  background: #eee;
-  padding: 25px 50px;
+  background: 1d1c1c;
+  padding: 25px 25px;
+  text-align: center;
 }
 
 .footer {
-  background-color: #2d63ad;
+  /* max-height: 500px; */
+  background-color: #1d1c1c;
+  padding-top: 0px;
 }
 
 .optionn {
@@ -103,11 +81,16 @@ a.instagram {
 }
 
 .t {
+  color: rgb(233, 177, 177);
+ text-align: center;
+}
+.ti{
   color: black;
 }
 
 .para {
   color: white;
+  text-align: center;
 }
 
 .description {
@@ -132,12 +115,12 @@ a.instagram {
 }
 
 .card {
-width: 70%;
+width: 100%;
   align-items: center;
 }
-
 .aaa {
   display: inline-block;
+
 }
 
 @media (max-width: 600px) {
@@ -151,7 +134,7 @@ width: 70%;
   .contactimg {
     display: block;
     height: auto;
-    width: 350px;
+    width: 100%;
   }
 }
 
@@ -169,6 +152,7 @@ width: 70%;
     width: 400px;
     height: 400px;
   }
+ 
 }
 *
 {
@@ -181,8 +165,10 @@ overflow-x:hidden;
 font-family:'PT Sans', sans-serif;
 }
 .back{
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(39, 36, 36);
+  
 }
+
 .section-container
 {
   align-items:center; 
@@ -262,4 +248,49 @@ margin-bottom:5px;
   width: 700px;
   height: 600px;
   flex: 50%;
+  margin-left: 300px;
 }
+
+.lml{
+  padding: 75px;
+}
+.columns {
+  Width: 100%;
+  }
+  .column-1, .column-2 {
+    width:100%;
+  }
+  @media (min-width: 48em) {
+    .column-1 {
+      width: 70%;
+      float:left;
+    }
+    .column-2 {
+      width: 30%;
+      float:left;
+    }
+  
+    .columns {
+      content:"";
+      display: table;
+      clear: both;
+    }
+  }
+  @media   (max-width : 700px) {
+    .mapp{
+      margin-left: 0px;
+  
+    }
+  }
+  .na{
+    background-color: #1d1c1c;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    flex-direction: row;
+  }
+.navbar-light .navbar-nav .nav-link:hover{
+  color: rgb(233, 177, 177);
+}
+.navbar-light .navbar-brand {
+color: white;}

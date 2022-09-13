@@ -6,13 +6,18 @@ import Image2 from '../img2.jpg';
 import Image3 from '../img3.jpg';
 const Slider = () => {
   return (
-    <div>
-       <AwesomeSlider>
-    <div data-src={Image1} />
-    <div data-src={Image2} />
-    <div data-src={Image3} />
-  </AwesomeSlider>
+  
+  <AwesomeSlider>
+    <div style={{backgroundImage : `url("${Image1}")` , backgroundSize : "cover"}}>
+
     </div>
+    <div style={{backgroundImage : `url("${Image2}")` , backgroundSize : "cover"}}>
+    </div>
+    <div style={{backgroundImage : `url("${Image3}")` , backgroundSize : "cover"}}>
+      
+    </div>
+  </AwesomeSlider>
+
   )
 }
 

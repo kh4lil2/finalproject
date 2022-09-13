@@ -1,6 +1,9 @@
 import React from "react";
 import PhotoAlbum from "react-photo-album";
+import Navbar1 from './navbar';
+
 const galerie = () => {
+    
 const photos = [
     {
         src: "card image/1.jpg",
@@ -44,9 +47,12 @@ const photos = [
     }
 ];
   return (
+    <>
+    <Navbar1/>
     <div>
       <PhotoAlbum layout="rows" photos={photos} />
     </div>
+    </>
   )
 }
 

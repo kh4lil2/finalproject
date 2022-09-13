@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import Coachingcard from './coachingcard'
 import './card.css'
+import Navbar1 from './navbar';
+
 function Coaching() {
   const [Card, setCard] = useState([
     {
@@ -28,9 +30,12 @@ function Coaching() {
 
   ])
   return (
+    <>
+    <Navbar1/>
     <div>
       {Card.map(el => <Coachingcard key={Coachingcard.id} title={el.title} description={el.description} posterURL={el.posterURL} />)}
     </div>
+    </>
   )
 }
 
